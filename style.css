@@ -1,0 +1,65 @@
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F7F7FA;
+}
+::-webkit-scrollbar-thumb {
+  background: #D1D1D6;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FF6B00;
+}
+
+/* Glassmorphism Card Utility */
+.glass-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Premium Orange custom glows */
+.orange-glow {
+  box-shadow: 0 0 40px -5px rgba(255, 107, 0, 0.15);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.orange-glow:hover {
+  box-shadow: 0 10px 40px -5px rgba(255, 107, 0, 0.25);
+  border-color: rgba(255, 107, 0, 0.3) !important;
+}
+
+/* Sparks Particles styles */
+.spark {
+  position: absolute;
+  border-radius: 9999px;
+  background-color: #FF6B00;
+  box-shadow: 0 0 10px #FF6B00, 0 0 20px #FF6B00;
+  pointer-events: none;
+  bottom: 10%;
+  opacity: 0;
+}
+
+@keyframes fly-up {
+  0% {
+    transform: translateY(0) translateX(0) rotate(0deg);
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.7;
+  }
+  85% {
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(var(--y-max)) translateX(var(--x-delta)) rotate(var(--rotate-max));
+    opacity: 0;
+  }
+}
+
+/* Angle Cut Bottom Divider */
+.clip-path-hero-bottom {
+  clip-path: polygon(0 100%, 100% 100%, 100% 0);
+}
