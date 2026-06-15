@@ -143,14 +143,16 @@
     <section id="home" class="relative min-h-screen flex items-center justify-center pt-24 pb-16 overflow-hidden bg-white text-industrial-black">
       <!-- Background Image with reduced white overlay so image shows through -->
       <div class="absolute inset-0 z-0">
-        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-45 transform scale-105" style="background-image: url('./laser-cutting.png');"></div>
-        <div class="absolute inset-0 bg-gradient-to-r from-white/70 via-white/40 to-transparent z-10"></div>
-        <div class="absolute inset-0 bg-gradient-to-t from-white/60 via-transparent to-white/20 z-10"></div>
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-25 transform scale-105" style="background-image: url('./laser-cutting.png');"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-white/85 via-white/50 to-transparent z-10"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-white/70 via-transparent to-white/30 z-10"></div>
       </div>
 
+      <!-- Fire Embers — behind text (z-10), above background (z-0) -->
+      <div id="embers-container" class="absolute inset-0 pointer-events-none overflow-hidden" style="z-index: 10;"></div>
 
-      <!-- Content Container -->
-      <div class="max-w-7xl mx-auto px-4 md:px-8 w-full z-20 relative text-left">
+      <!-- Content Container — above embers -->
+      <div class="max-w-7xl mx-auto px-4 md:px-8 w-full relative text-left" style="z-index: 30;">
         <div class="max-w-3xl space-y-6">
           <!-- Engineering Badge -->
           <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary-dark text-xs font-bold uppercase tracking-wider mb-2">
