@@ -141,16 +141,13 @@
   <main>
     <!-- ================= HERO SECTION ================= -->
     <section id="home" class="relative min-h-screen flex items-center justify-center pt-24 pb-16 overflow-hidden bg-white text-industrial-black">
-      <!-- Background Image with Bright Parallax Overlay -->
+      <!-- Background Image with reduced white overlay so image shows through -->
       <div class="absolute inset-0 z-0">
-        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-15 transform scale-105" style="background-image: url('./laser-cutting.png');"></div>
-        <div class="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-transparent z-10"></div>
-        <div class="absolute inset-0 bg-gradient-to-t from-white via-transparent to-white/40 z-10"></div>
-        <div class="absolute inset-0 bg-[linear-gradient(rgba(0,0,0,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(0,0,0,0.02)_1px,transparent_1px)] bg-[size:30px_30px] z-10"></div>
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-45 transform scale-105" style="background-image: url('./laser-cutting.png');"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-white/70 via-white/40 to-transparent z-10"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-white/60 via-transparent to-white/20 z-10"></div>
       </div>
 
-      <!-- Floating Laser Sparks Simulation -->
-      <div id="sparks-container" class="absolute inset-0 z-10 pointer-events-none overflow-hidden"></div>
 
       <!-- Content Container -->
       <div class="max-w-7xl mx-auto px-4 md:px-8 w-full z-20 relative text-left">
