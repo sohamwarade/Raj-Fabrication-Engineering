@@ -1,0 +1,1422 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raj Fabrication & Engineering | Precision Laser Cutting & CNC Bending, Pune</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Premium industrial sheet metal fabrication and laser cutting services in Pune. Offering 12kW and 3kW Fiber Laser Cutting and CNC Bending. Get a B2B quotation.">
+  <meta name="keywords" content="Laser Cutting Pune, CNC Bending, Sheet Metal Fabrication, Raj Fabrication, Hadapsar Industrial Area, Pune Engineering">
+  <meta name="author" content="Raj Fabrication & Engineering">
+
+  <!-- Google Fonts & Tailwind Play CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Outfit', 'sans-serif'],
+          },
+          colors: {
+            primary: '#FF6B00',
+            'primary-dark': '#E05E00',
+            'primary-light': '#FF8533',
+            'industrial-black': '#0F0F11',
+            'industrial-gray': '#1E1E24',
+            'industrial-light': '#F7F7FA'
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- External style sheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-sans antialiased bg-white text-industrial-black overflow-x-hidden selection:bg-primary selection:text-white">
+
+  <!-- ================= NAVBAR SECTION ================= -->
+  <header class="fixed top-0 left-0 w-full z-50 transition-all duration-300">
+    <!-- Top tier - Micro Info Bar (hides on scroll) -->
+    <div id="top-bar" class="bg-industrial-black text-white text-xs py-2 px-4 transition-all duration-300 border-b border-white/10 opacity-100">
+      <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+        <div class="flex items-center gap-4">
+          <span class="flex items-center gap-1.5 text-gray-300">
+            <i data-lucide="clock" class="w-3.5 h-3.5 text-primary"></i> All Days: 8:00 AM - 10:00 PM
+          </span>
+          <span class="hidden md:flex items-center gap-1.5 text-gray-300">
+            <i data-lucide="shield-check" class="w-3.5 h-3.5 text-primary"></i> GSTIN: 27AISPD7120J1Z3
+          </span>
+        </div>
+        <div class="flex items-center gap-4">
+          <a href="mailto:waradesoham22@gmail.com" class="flex items-center gap-1.5 text-gray-300 hover:text-primary transition-colors">
+            <i data-lucide="mail" class="w-3.5 h-3.5"></i> waradesoham22@gmail.com
+          </a>
+          <a href="tel:+919022185091" class="flex items-center gap-1.5 text-gray-300 hover:text-primary transition-colors">
+            <i data-lucide="phone" class="w-3.5 h-3.5"></i> +91 9022185091
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Navbar -->
+    <nav id="main-nav" class="w-full transition-all duration-300 px-4 md:px-8 py-4 bg-white/90 border-b border-black/5">
+      <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <!-- Logo -->
+        <a href="#home" class="flex items-center gap-2 text-xl md:text-2xl font-bold tracking-tight text-industrial-black">
+          <!-- Cogwheel logo -->
+          <div class="relative w-10 h-10 bg-primary/5 rounded-xl border border-primary/10 overflow-hidden shadow-sm shadow-primary/5 flex-shrink-0">
+            <i data-lucide="settings" class="absolute top-1 left-1 w-6 h-6 text-primary animate-[spin_15s_linear_infinite]"></i>
+            <i data-lucide="settings" class="absolute bottom-1 right-1 w-4.5 h-4.5 text-blue-500 animate-[spin_10s_linear_infinite_reverse]"></i>
+          </div>
+          <div class="flex flex-col leading-none">
+            <span class="font-extrabold uppercase text-lg tracking-wider text-industrial-black">
+              Raj <span class="text-primary">Fabrication</span>
+            </span>
+            <span class="text-[9px] text-gray-500 font-semibold tracking-widest uppercase mt-0.5">
+              & Engineering
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Links -->
+        <div class="hidden lg:flex items-center gap-8">
+          <ul class="flex items-center gap-6">
+            <li><a href="#home" class="nav-link text-sm font-medium tracking-wide transition-colors py-1.5 text-primary font-bold">Home</a></li>
+            <li><a href="#about" class="nav-link text-sm font-medium tracking-wide transition-colors py-1.5 text-gray-600 hover:text-primary">About Us</a></li>
+            <li><a href="#machines" class="nav-link text-sm font-medium tracking-wide transition-colors py-1.5 text-gray-600 hover:text-primary">Machines</a></li>
+            <li><a href="#services" class="nav-link text-sm font-medium tracking-wide transition-colors py-1.5 text-gray-600 hover:text-primary">Services</a></li>
+            <li><a href="#quote" class="nav-link text-sm font-medium tracking-wide transition-colors py-1.5 text-gray-600 hover:text-primary">Instant Quote</a></li>
+            <li><a href="#contact" class="nav-link text-sm font-medium tracking-wide transition-colors py-1.5 text-gray-600 hover:text-primary">Contact</a></li>
+          </ul>
+          <button onclick="smoothScroll('#quote')" class="bg-primary hover:bg-primary-dark text-white text-sm font-bold py-2.5 px-5 rounded-md shadow-md shadow-primary/25 hover:shadow-lg transition-all transform hover:-translate-y-0.5 duration-200">
+            Get a Quote
+          </button>
+        </div>
+
+        <!-- Mobile menu toggle -->
+        <div class="flex items-center gap-4 lg:hidden">
+          <button onclick="smoothScroll('#quote')" class="bg-primary hover:bg-primary-dark text-white text-xs font-bold py-2 px-3.5 rounded shadow-sm shadow-primary/25">
+            Quote
+          </button>
+          <button id="menu-btn" class="p-1.5 text-gray-700 hover:text-primary hover:bg-gray-100 rounded transition-colors" aria-label="Toggle Menu">
+            <i data-lucide="menu" class="w-6 h-6"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Drawer -->
+    <div id="mobile-menu" class="hidden w-full lg:hidden bg-white border-b border-black/10 shadow-xl overflow-hidden">
+      <div class="px-6 py-6 flex flex-col gap-4">
+        <ul class="flex flex-col gap-3">
+          <li><a href="#home" class="mobile-nav-link block py-2 text-base font-semibold border-b border-gray-100 text-primary pl-2 border-l-2 border-l-primary">Home</a></li>
+          <li><a href="#about" class="mobile-nav-link block py-2 text-base font-semibold border-b border-gray-100 text-gray-800 hover:text-primary">About Us</a></li>
+          <li><a href="#machines" class="mobile-nav-link block py-2 text-base font-semibold border-b border-gray-100 text-gray-800 hover:text-primary">Machines</a></li>
+          <li><a href="#services" class="mobile-nav-link block py-2 text-base font-semibold border-b border-gray-100 text-gray-800 hover:text-primary">Services</a></li>
+          <li><a href="#quote" class="mobile-nav-link block py-2 text-base font-semibold border-b border-gray-100 text-gray-800 hover:text-primary">Instant Quote</a></li>
+          <li><a href="#contact" class="mobile-nav-link block py-2 text-base font-semibold border-b border-gray-100 text-gray-800 hover:text-primary">Contact</a></li>
+        </ul>
+        <div class="pt-2 flex flex-col gap-3">
+          <a href="tel:+919022185091" class="flex items-center justify-center gap-2 bg-gray-100 hover:bg-gray-200 text-gray-800 font-bold py-3 rounded-md transition-colors text-sm">
+            <i data-lucide="phone" class="w-4 h-4 text-primary"></i> Call Now
+          </a>
+          <a href="https://wa.me/919022185091" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 rounded-md transition-colors text-sm">
+            WhatsApp Us
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================= HERO SECTION ================= -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center pt-24 pb-16 overflow-hidden bg-white text-industrial-black">
+      <!-- Background Image with Bright Parallax Overlay -->
+      <div class="absolute inset-0 z-0">
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-15 transform scale-105" style="background-image: url('./laser-cutting.png');"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-transparent z-10"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-white via-transparent to-white/40 z-10"></div>
+        <div class="absolute inset-0 bg-[linear-gradient(rgba(0,0,0,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(0,0,0,0.02)_1px,transparent_1px)] bg-[size:30px_30px] z-10"></div>
+      </div>
+
+      <!-- Floating Laser Sparks Simulation -->
+      <div id="sparks-container" class="absolute inset-0 z-10 pointer-events-none overflow-hidden"></div>
+
+      <!-- Content Container -->
+      <div class="max-w-7xl mx-auto px-4 md:px-8 w-full z-20 relative text-left">
+        <div class="max-w-3xl space-y-6">
+          <!-- Engineering Badge -->
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary-dark text-xs font-bold uppercase tracking-wider mb-2">
+            <span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+            ISO Standards & CNC Precision
+          </div>
+
+          <!-- Main Headline -->
+          <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight leading-[1.1] text-industrial-black uppercase">
+            Precision <span class="text-primary">Laser Cutting</span> <br class="hidden sm:inline" />
+            & Fabrication Solutions
+          </h1>
+
+          <!-- Subheading -->
+          <p class="text-base md:text-lg text-gray-500 font-light leading-relaxed max-w-2xl">
+            Providing high-quality SS and MS fabrication, laser cutting, CNC bending, and industrial engineering solutions with precision, speed, and reliability.
+          </p>
+
+          <!-- CTAs -->
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-4">
+            <a href="#quote" class="group flex items-center justify-center gap-2 bg-primary hover:bg-primary-dark text-white font-bold py-4 px-8 rounded-md shadow-lg shadow-primary/20 hover:shadow-primary/40 transition-all duration-300 transform hover:-translate-y-0.5 uppercase tracking-wider text-xs">
+              Get a Quote
+              <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+            </a>
+
+            <a href="tel:+919022185091" class="flex items-center justify-center gap-2 bg-industrial-light hover:bg-gray-200 text-industrial-black font-bold py-4 px-8 rounded-md border border-gray-300 transition-all duration-300 transform hover:-translate-y-0.5 uppercase tracking-wider text-xs">
+              <i data-lucide="phone" class="w-4 h-4 text-primary"></i>
+              Call Now
+            </a>
+
+            <a href="https://wa.me/919022185091?text=Hello%20Raj%20Fabrication%2C%20I%20am%20interested%20in%20your%20laser%20cutting%20and%20fabrication%20services." target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-4 px-8 rounded-md shadow-md shadow-emerald-600/10 transition-all duration-300 transform hover:-translate-y-0.5 uppercase tracking-wider text-xs">
+              <i data-lucide="message-square" class="w-4 h-4 text-white"></i>
+              WhatsApp Us
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Angle Cut Bottom Divider -->
+      <div class="absolute bottom-0 left-0 right-0 h-16 bg-industrial-light clip-path-hero-bottom"></div>
+    </section>
+
+    <!-- ================= ABOUT US SECTION ================= -->
+    <section id="about" class="py-20 bg-industrial-light text-industrial-black overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 md:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center text-left">
+          <!-- Left Column: text and features -->
+          <div class="lg:col-span-7 space-y-6">
+            <div class="space-y-2">
+              <span class="text-primary font-bold text-xs uppercase tracking-widest block">
+                ENGINEERING EXCELLENCE
+              </span>
+              <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight text-gray-900">
+                Empowering Industries with <br />
+                <span class="text-primary">Precision Sheet Metal</span> Solutions
+              </h2>
+            </div>
+
+            <p class="text-gray-600 leading-relaxed font-light text-base md:text-lg">
+              Raj Fabrication & Engineering specializes in high-end industrial fabrication and sheet metal processing. 
+              Based in Pune's industrial hub, we leverage advanced fiber laser cutting systems and CNC bending machinery 
+              to deliver highly precise, robust, and cost-efficient components for engineering projects.
+            </p>
+
+            <p class="text-gray-600 leading-relaxed font-light text-sm">
+              We service a diverse industrial client list including factories, construction contractors, machinery builders, 
+              automotive vendors, and custom product designers. From thick plate cutting to complex assemblies, our skilled 
+              workforce ensures that drawings are executed to tight tolerances.
+            </p>
+
+            <!-- Feature pillars -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4">
+              <div class="flex gap-3 items-start">
+                <div class="p-2.5 rounded-lg bg-primary/10 text-primary mt-1 flex-shrink-0">
+                  <i data-lucide="settings" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-gray-900 text-sm tracking-wide">Advanced Technology</h4>
+                  <p class="text-xs text-gray-500 mt-1 leading-relaxed">State-of-the-art 12 kW and 3 kW fiber lasers and CNC bending machinery.</p>
+                </div>
+              </div>
+
+              <div class="flex gap-3 items-start">
+                <div class="p-2.5 rounded-lg bg-primary/10 text-primary mt-1 flex-shrink-0">
+                  <i data-lucide="shield" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-gray-900 text-sm tracking-wide">Quality First</h4>
+                  <p class="text-xs text-gray-500 mt-1 leading-relaxed">Strict quality control checks for raw materials and finished fabrications.</p>
+                </div>
+              </div>
+
+              <div class="flex gap-3 items-start">
+                <div class="p-2.5 rounded-lg bg-primary/10 text-primary mt-1 flex-shrink-0">
+                  <i data-lucide="users" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-gray-900 text-sm tracking-wide">Expert Craftsmanship</h4>
+                  <p class="text-xs text-gray-500 mt-1 leading-relaxed">A highly skilled engineering team dedicated to executing custom project requests.</p>
+                </div>
+              </div>
+
+              <div class="flex gap-3 items-start">
+                <div class="p-2.5 rounded-lg bg-primary/10 text-primary mt-1 flex-shrink-0">
+                  <i data-lucide="star" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-gray-900 text-sm tracking-wide">B2B Focus</h4>
+                  <p class="text-xs text-gray-500 mt-1 leading-relaxed">Reliable production scheduling, fast lead times, and competitive pricing structures.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive details card -->
+          <div class="lg:col-span-5 relative flex items-center justify-center">
+            <!-- Background design elements -->
+            <div class="absolute w-72 h-72 rounded-full bg-primary/10 -top-10 -right-10 blur-3xl"></div>
+            <div class="absolute w-72 h-72 rounded-full bg-industrial-black/5 -bottom-10 -left-10 blur-3xl"></div>
+
+            <!-- Card Frame -->
+            <div class="relative w-full max-w-md bg-white border border-gray-200/60 rounded-2xl p-8 shadow-xl overflow-hidden orange-glow">
+              <!-- Corner Orange Slash accent -->
+              <div class="absolute top-0 right-0 w-24 h-24 bg-primary transform rotate-45 translate-x-12 -translate-y-12"></div>
+
+              <h3 class="text-xl font-extrabold border-b border-gray-100 pb-4 text-industrial-black font-sans">
+                Company Details
+              </h3>
+
+              <div class="mt-6 space-y-5">
+                <div>
+                  <span class="text-[10px] uppercase font-bold text-gray-400 tracking-wider">COMPANY NAME</span>
+                  <p class="text-base font-extrabold text-primary leading-tight">Raj Fabrication & Engineering</p>
+                </div>
+
+                <div>
+                  <span class="text-[10px] uppercase font-bold text-gray-400 tracking-wider">PROPRIETOR</span>
+                  <p class="text-lg font-bold text-gray-800">G. D. Dahake</p>
+                </div>
+
+                <div>
+                  <span class="text-[10px] uppercase font-bold text-gray-400 tracking-wider">ESTATE LOCATION</span>
+                  <p class="text-sm font-semibold text-gray-600 leading-relaxed mt-1">
+                    Plot No. 38, Swami Vivekanand Industrial Estate, Handewadi Road, Kalepadal, Hadapsar, Pune – 411028
+                  </p>
+                </div>
+
+                <div>
+                  <span class="text-[10px] uppercase font-bold text-gray-400 tracking-wider">CREDENTIALS</span>
+                  <div class="flex items-center gap-2 mt-1.5">
+                    <span class="text-xs bg-industrial-black text-white px-2.5 py-1 rounded font-bold uppercase tracking-wider">
+                      GST Registered
+                    </span>
+                    <span class="text-xs text-gray-500 font-mono">27AISPD7120J1Z3</span>
+                  </div>
+                </div>
+
+                <div class="pt-4 border-t border-gray-100 grid grid-cols-2 gap-4">
+                  <div class="bg-industrial-light p-3 rounded-lg text-center">
+                    <span class="text-2xl font-black text-primary">100%</span>
+                    <p class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mt-1">Accurate Bends</p>
+                  </div>
+                  <div class="bg-industrial-light p-3 rounded-lg text-center">
+                    <span class="text-2xl font-black text-primary">0.05mm</span>
+                    <p class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mt-1">Laser Tolerance</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= MACHINES SECTION ================= -->
+    <section id="machines" class="py-20 bg-white text-industrial-black">
+      <div class="max-w-7xl mx-auto px-4 md:px-8">
+        <!-- Section Header -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4 text-left">
+          <div class="space-y-2">
+            <span class="text-primary font-bold text-xs uppercase tracking-widest block">
+              MACHINERY FLOTILLA
+            </span>
+            <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight text-gray-900">
+              Advanced CNC Machinery <br />
+              For <span class="text-primary">High-Speed</span> Operations
+            </h2>
+          </div>
+          <p class="text-gray-500 max-w-md font-light text-sm md:text-base">
+            We invest in modern high-power fiber lasers and digital bending controls to ensure we meet tight tolerances, quick turnarounds, and robust quality.
+          </p>
+        </div>
+
+        <!-- Tab Selection & Slider Layout -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          <!-- Left: Tab Select Buttons -->
+          <div class="lg:col-span-4 flex flex-row lg:flex-col overflow-x-auto lg:overflow-x-visible gap-3 pb-4 lg:pb-0 scrollbar-thin">
+            <button onclick="switchTab(0)" class="tab-btn text-left px-5 py-5 rounded-2xl font-bold transition-all duration-200 border flex items-center gap-4 w-full bg-industrial-black text-white border-industrial-black shadow-lg">
+              <div class="tab-icon w-12 h-12 rounded-xl bg-primary flex items-center justify-center flex-shrink-0 text-white">
+                <i data-lucide="zap" class="w-5 h-5"></i>
+              </div>
+              <div class="flex flex-col text-left">
+                <span class="text-xs uppercase tracking-widest font-extrabold text-primary">Heavy Duty Precision</span>
+                <span class="text-base font-bold text-white mt-0.5">12 kW Fiber Laser Cutting</span>
+              </div>
+            </button>
+
+            <button onclick="switchTab(1)" class="tab-btn text-left px-5 py-5 rounded-2xl font-bold transition-all duration-200 border flex items-center gap-4 w-full bg-white text-gray-800 border-gray-200 hover:border-primary/30 hover:shadow-md">
+              <div class="tab-icon w-12 h-12 rounded-xl bg-gray-100 flex items-center justify-center flex-shrink-0 text-gray-600">
+                <i data-lucide="sparkles" class="w-5 h-5"></i>
+              </div>
+              <div class="flex flex-col text-left">
+                <span class="text-xs uppercase tracking-widest font-extrabold text-primary">Fine Sheet Specialist</span>
+                <span class="text-base font-bold text-gray-800 mt-0.5">3 kW Fiber Laser Cutting</span>
+              </div>
+            </button>
+
+            <button onclick="switchTab(2)" class="tab-btn text-left px-5 py-5 rounded-2xl font-bold transition-all duration-200 border flex items-center gap-4 w-full bg-white text-gray-800 border-gray-200 hover:border-primary/30 hover:shadow-md">
+              <div class="tab-icon w-12 h-12 rounded-xl bg-gray-100 flex items-center justify-center flex-shrink-0 text-gray-600">
+                <i data-lucide="cpu" class="w-5 h-5"></i>
+              </div>
+              <div class="flex flex-col text-left">
+                <span class="text-xs uppercase tracking-widest font-extrabold text-primary">Perfect Angles</span>
+                <span class="text-base font-bold text-gray-800 mt-0.5">CNC Bending / Press Brake</span>
+              </div>
+            </button>
+
+            <button onclick="switchTab(3)" class="tab-btn text-left px-5 py-5 rounded-2xl font-bold transition-all duration-200 border flex items-center gap-4 w-full bg-white text-gray-800 border-gray-200 hover:border-primary/30 hover:shadow-md">
+              <div class="tab-icon w-12 h-12 rounded-xl bg-gray-100 flex items-center justify-center flex-shrink-0 text-gray-600">
+                <i data-lucide="maximize" class="w-5 h-5"></i>
+              </div>
+              <div class="flex flex-col text-left">
+                <span class="text-xs uppercase tracking-widest font-extrabold text-primary">Rapid Cutting</span>
+                <span class="text-base font-bold text-gray-800 mt-0.5">Hydraulic Shearing</span>
+              </div>
+            </button>
+          </div>
+
+          <!-- Right: Active Machine Details Container -->
+          <div class="lg:col-span-8">
+            <div class="bg-industrial-light border border-gray-200/60 rounded-2xl overflow-hidden shadow-lg grid grid-cols-1 md:grid-cols-2 text-left">
+              <!-- Image box -->
+              <div class="relative h-64 md:h-auto min-h-[280px] w-full bg-industrial-black">
+                <img id="active-tab-img" src="./laser-12kw.png" alt="12 kW Fiber Laser Cutting Machine" class="absolute inset-0 w-full h-full object-cover opacity-90 hover:scale-105 transition-transform duration-500 animate-[fadeIn_0.5s]" />
+                <div class="absolute inset-0 bg-gradient-to-t from-industrial-black/60 to-transparent pointer-events-none"></div>
+                <span id="active-tab-badge" class="absolute top-4 left-4 bg-primary text-white text-[10px] uppercase font-black px-2.5 py-1 rounded tracking-widest shadow-md shadow-primary/20">
+                  Heavy Duty Precision
+                </span>
+              </div>
+
+              <!-- Specs & Description box -->
+              <div class="p-6 md:p-8 flex flex-col justify-between space-y-6">
+                <div>
+                  <h3 id="active-tab-title" class="text-xl md:text-2xl font-black text-industrial-black leading-tight font-sans">
+                    12 kW Fiber Laser Cutting Machine
+                  </h3>
+                  <p id="active-tab-desc" class="text-gray-500 text-xs md:text-sm mt-3 leading-relaxed font-light">
+                    Our high-capacity flagship laser cutter is designed for high-speed precision cutting of thick metal sheets. Engineered to handle large-scale, heavy industrial parts with exceptional accuracy.
+                  </p>
+                </div>
+
+                <div class="space-y-3 pt-2">
+                  <h4 class="text-xs uppercase font-extrabold text-gray-400 tracking-wider">
+                    Technical Specifications
+                  </h4>
+                  <div id="active-tab-specs" class="divide-y divide-gray-200/50">
+                    <div class="py-2 flex justify-between text-xs gap-4">
+                      <span class="text-gray-500 font-medium">Laser Power</span>
+                      <span class="text-industrial-black font-semibold text-right">12,000 Watts (12 kW)</span>
+                    </div>
+                    <div class="py-2 flex justify-between text-xs gap-4">
+                      <span class="text-gray-500 font-medium">Cutting Materials</span>
+                      <span class="text-industrial-black font-semibold text-right">MS (up to 40mm), SS (up to 35mm), Aluminum</span>
+                    </div>
+                    <div class="py-2 flex justify-between text-xs gap-4">
+                      <span class="text-gray-500 font-medium">Precision/Tolerance</span>
+                      <span class="text-industrial-black font-semibold text-right">±0.03 mm</span>
+                    </div>
+                    <div class="py-2 flex justify-between text-xs gap-4">
+                      <span class="text-gray-500 font-medium">Table Workspace</span>
+                      <span class="text-industrial-black font-semibold text-right">3000mm x 1500mm / Dual Pallet Changer</span>
+                    </div>
+                    <div class="py-2 flex justify-between text-xs gap-4">
+                      <span class="text-gray-500 font-medium">Key Benefit</span>
+                      <span class="text-industrial-black font-semibold text-right">Ultra-fast cutting of heavy plates, cleaner edges</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= INFRASTRUCTURE SECTION ================= -->
+    <section id="infrastructure" class="py-20 bg-industrial-light text-industrial-black border-t border-b border-gray-200/50">
+      <div class="max-w-7xl mx-auto px-4 md:px-8">
+        <!-- Section Header -->
+        <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+          <span class="text-primary font-bold text-xs uppercase tracking-widest block">
+            FACTORY POWERHOUSE
+          </span>
+          <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight text-gray-900">
+            Our Manufacturing <span class="text-primary">Infrastructure</span>
+          </h2>
+          <div class="w-16 h-1 bg-primary mx-auto rounded"></div>
+          <p class="text-gray-500 font-light text-sm md:text-base">
+            Take a look at the actual manufacturing machinery currently deployed on our Hadapsar shop floor to execute B2B contract designs.
+          </p>
+        </div>
+
+        <!-- Infrastructure Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-left">
+          <!-- 12kW Laser -->
+          <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between group orange-glow">
+            <div class="relative h-64 w-full bg-industrial-black overflow-hidden cursor-zoom-in" onclick="openLightbox('./laser-12kw.png')">
+              <img src="./laser-12kw.png" alt="12 kW Fiber Laser" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              <div class="absolute inset-0 bg-industrial-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <span class="bg-white text-industrial-black px-4 py-2 rounded-lg text-xs font-bold flex items-center gap-1.5 shadow-md">
+                  <i data-lucide="zoom-in" class="w-4 h-4 text-primary"></i> Zoom Image
+                </span>
+              </div>
+              <span class="absolute bottom-4 left-4 bg-industrial-black/80 text-white text-[10px] uppercase font-bold px-2.5 py-1 rounded tracking-wider border border-white/10">
+                Actual Asset Photo
+              </span>
+            </div>
+            <div class="p-6 flex-grow flex flex-col justify-between space-y-6">
+              <div class="space-y-3">
+                <div class="flex items-center gap-2">
+                  <div class="p-1.5 rounded bg-primary/10 text-primary">
+                    <i data-lucide="settings" class="w-4 h-4"></i>
+                  </div>
+                  <h3 class="font-extrabold text-lg text-gray-900 leading-snug">12 kW Fiber Laser Cutting Machine</h3>
+                </div>
+                <p class="text-xs font-semibold text-primary">High-power precision cutting for industrial applications.</p>
+                <div class="w-8 h-0.5 bg-gray-200"></div>
+              </div>
+              <ul class="space-y-2.5">
+                <li class="flex items-start gap-2 text-[11px] text-gray-500 leading-relaxed font-light">
+                  <span class="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0 mt-1.5"></span>
+                  <span>Processing Thickness: Up to 40mm Mild Steel (MS) & 35mm Stainless Steel (SS)</span>
+                </li>
+                <li class="flex items-start gap-2 text-[11px] text-gray-500 leading-relaxed font-light">
+                  <span class="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0 mt-1.5"></span>
+                  <span>Key Advantage: High-speed processing of heavy structural steel plate networks</span>
+                </li>
+                <li class="flex items-start gap-2 text-[11px] text-gray-500 leading-relaxed font-light">
+                  <span class="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0 mt-1.5"></span>
+                  <span>Control System: Advanced CNC automation with dynamic height control sensors</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- 3kW Laser -->
+          <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between group orange-glow">
+            <div class="relative h-64 w-full bg-industrial-black overflow-hidden cursor-zoom-in" onclick="openLightbox('./laser-3kw.png')">
+              <img src="./laser-3kw.png" alt="3 kW Fiber Laser" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              <div class="absolute inset-0 bg-industrial-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <span class="bg-white text-industrial-black px-4 py-2 rounded-lg text-xs font-bold flex items-center gap-1.5 shadow-md">
+                  <i data-lucide="zoom-in" class="w-4 h-4 text-primary"></i> Zoom Image
+                </span>
+              </div>
+              <span class="absolute bottom-4 left-4 bg-industrial-black/80 text-white text-[10px] uppercase font-bold px-2.5 py-1 rounded tracking-wider border border-white/10">
+                Actual Asset Photo
+              </span>
+            </div>
+            <div class="p-6 flex-grow flex flex-col justify-between space-y-6">
+              <div class="space-y-3">
+                <div class="flex items-center gap-2">
+                  <div class="p-1.5 rounded bg-primary/10 text-primary">
+                    <i data-lucide="star" class="w-4 h-4"></i>
+                  </div>
+                  <h3 class="font-extrabold text-lg text-gray-900 leading-snug">3 kW Fiber Laser Cutting Machine</h3>
+                </div>
+                <p class="text-xs font-semibold text-primary">Accurate sheet metal processing and custom fabrication.</p>
+                <div class="w-8 h-0.5 bg-gray-200"></div>
+              </div>
+              <ul class="space-y-2.5">
+                <li class="flex items-start gap-2 text-[11px] text-gray-500 leading-relaxed font-light">
+                  <span class="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0 mt-1.5"></span>
+                  <span>Processing Thickness: Up to 16mm MS & 10mm SS sheets</span>
+                </li>
+                <li class="flex items-start gap-2 text-[11px] text-gray-500 leading-relaxed font-light">
+                  <span class="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0 mt-1.5"></span>
+                  <span>Key Advantage: Fine geometries, complex profiles, and low heat distortion rates</span>
+                </li>
+                <li class="flex items-start gap-2 text-[11px] text-gray-500 leading-relaxed font-light">
+                  <span class="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0 mt-1.5"></span>
+                  <span>Speed: High acceleration rates for bracket production grids</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- CNC Bending -->
+          <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between group orange-glow">
+            <div class="relative h-64 w-full bg-industrial-black overflow-hidden cursor-zoom-in" onclick="openLightbox('./cnc-bending-1.png')">
+              <img src="./cnc-bending-1.png" alt="CNC Bending Machine" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              <div class="absolute inset-0 bg-industrial-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <span class="bg-white text-industrial-black px-4 py-2 rounded-lg text-xs font-bold flex items-center gap-1.5 shadow-md">
+                  <i data-lucide="zoom-in" class="w-4 h-4 text-primary"></i> Zoom Image
+                </span>
+              </div>
+              <span class="absolute bottom-4 left-4 bg-industrial-black/80 text-white text-[10px] uppercase font-bold px-2.5 py-1 rounded tracking-wider border border-white/10">
+                Actual Asset Photo
+              </span>
+            </div>
+            <div class="p-6 flex-grow flex flex-col justify-between space-y-6">
+              <div class="space-y-3">
+                <div class="flex items-center gap-2">
+                  <div class="p-1.5 rounded bg-primary/10 text-primary">
+                    <i data-lucide="shield" class="w-4 h-4"></i>
+                  </div>
+                  <h3 class="font-extrabold text-lg text-gray-900 leading-snug">CNC Bending Machine</h3>
+                </div>
+                <p class="text-xs font-semibold text-primary">Precision bending with consistent quality and repeatability.</p>
+                <div class="w-8 h-0.5 bg-gray-200"></div>
+              </div>
+              <ul class="space-y-2.5">
+                <li class="flex items-start gap-2 text-[11px] text-gray-500 leading-relaxed font-light">
+                  <span class="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0 mt-1.5"></span>
+                  <span>Capacity: 110-Ton press brake with multi-axis CNC backgauges</span>
+                </li>
+                <li class="flex items-start gap-2 text-[11px] text-gray-500 leading-relaxed font-light">
+                  <span class="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0 mt-1.5"></span>
+                  <span>Key Advantage: Angle accuracy within ±0.1° with zero angle drift on repeat runs</span>
+                </li>
+                <li class="flex items-start gap-2 text-[11px] text-gray-500 leading-relaxed font-light">
+                  <span class="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0 mt-1.5"></span>
+                  <span>Tooling: V-dies set up for diverse sheet metal thickness variations</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Hydraulic Shearing Machine -->
+          <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between group orange-glow">
+            <div class="relative h-64 w-full bg-industrial-black overflow-hidden cursor-zoom-in" onclick="openLightbox('./cnc-bending-2.png')">
+              <img src="./cnc-bending-2.png" alt="Hydraulic Shearing Machine" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              <div class="absolute inset-0 bg-industrial-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <span class="bg-white text-industrial-black px-4 py-2 rounded-lg text-xs font-bold flex items-center gap-1.5 shadow-md">
+                  <i data-lucide="zoom-in" class="w-4 h-4 text-primary"></i> Zoom Image
+                </span>
+              </div>
+              <span class="absolute bottom-4 left-4 bg-industrial-black/80 text-white text-[10px] uppercase font-bold px-2.5 py-1 rounded tracking-wider border border-white/10">
+                Actual Asset Photo
+              </span>
+            </div>
+            <div class="p-6 flex-grow flex flex-col justify-between space-y-6">
+              <div class="space-y-3">
+                <div class="flex items-center gap-2">
+                  <div class="p-1.5 rounded bg-primary/10 text-primary">
+                    <i data-lucide="scissors" class="w-4 h-4"></i>
+                  </div>
+                  <h3 class="font-extrabold text-lg text-gray-900 leading-snug">Hydraulic Shearing Machine</h3>
+                </div>
+                <p class="text-xs font-semibold text-primary">Rapid sizing and straight cutting with minimal distortion.</p>
+                <div class="w-8 h-0.5 bg-gray-200"></div>
+              </div>
+              <ul class="space-y-2.5">
+                <li class="flex items-start gap-2 text-[11px] text-gray-500 leading-relaxed font-light">
+                  <span class="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0 mt-1.5"></span>
+                  <span>Capacity: Sizing raw sheets up to 6mm MS thickness</span>
+                </li>
+                <li class="flex items-start gap-2 text-[11px] text-gray-500 leading-relaxed font-light">
+                  <span class="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0 mt-1.5"></span>
+                  <span>Key Advantage: Slashes processing time for structural sizing and blank preparation</span>
+                </li>
+                <li class="flex items-start gap-2 text-[11px] text-gray-500 leading-relaxed font-light">
+                  <span class="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0 mt-1.5"></span>
+                  <span>Blade Gap: Dial-indexed precision adjustment to prevent burrs</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Zoom Lightbox Modal -->
+    <div id="lightbox" class="hidden fixed inset-0 bg-black/95 z-[999] items-center justify-center p-4 md:p-8 cursor-zoom-out">
+      <button onclick="closeLightbox()" class="absolute top-6 right-6 p-2 bg-white/10 hover:bg-white/20 text-white rounded-full transition-colors z-[1000]" aria-label="Close zoomed view">
+        <i data-lucide="x" class="w-6 h-6 text-white"></i>
+      </button>
+      <div class="relative w-full max-w-4xl aspect-video rounded-xl overflow-hidden border border-white/10">
+        <img id="lightbox-img" src="" alt="Zoomed machine view" class="w-full h-full object-contain" />
+      </div>
+    </div>
+
+    <!-- ================= SERVICES SECTION ================= -->
+    <section id="services" class="py-20 bg-industrial-light text-industrial-black">
+      <div class="max-w-7xl mx-auto px-4 md:px-8">
+        <!-- Section Title -->
+        <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+          <span class="text-primary font-bold text-xs uppercase tracking-widest block">
+            OUR CAPABILITIES
+          </span>
+          <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight text-gray-900">
+            High-Performance <span class="text-primary">Fabrication & Cutting</span> Services
+          </h2>
+          <div class="w-16 h-1 bg-primary mx-auto rounded"></div>
+          <p class="text-gray-500 font-light text-sm md:text-base">
+            From raw metal sheet pre-processing to heavy structural assemblies, we deliver high-quality engineering services tailored to your B2B demands.
+          </p>
+        </div>
+
+        <!-- Services Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-left">
+          <!-- 1. Fiber Laser Cutting -->
+          <div class="bg-white border border-gray-200/60 rounded-xl p-6 shadow-sm hover:shadow-md hover:border-primary/30 transition-all duration-300 relative group flex flex-col justify-between orange-glow overflow-hidden">
+            <div class="absolute top-0 left-0 w-0 h-1 bg-primary group-hover:w-full transition-all duration-300"></div>
+            <div class="space-y-4">
+              <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                <i data-lucide="flame" class="w-6 h-6"></i>
+              </div>
+              <h3 class="text-base font-extrabold text-gray-900 group-hover:text-primary transition-colors">Fiber Laser Cutting</h3>
+              <p class="text-xs text-gray-500 leading-relaxed font-light">
+                High-precision cutting of Stainless Steel (SS), Mild Steel (MS), Aluminum, Brass, and Copper using high-power 12 kW and 3 kW fiber lasers.
+              </p>
+            </div>
+            <div class="pt-6 mt-4 border-t border-gray-100 flex items-center justify-between">
+              <a href="#quote" class="text-[10px] uppercase font-bold text-gray-400 group-hover:text-primary transition-colors flex items-center gap-1">
+                Request Pricing
+                <i data-lucide="arrow-up-right" class="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- 2. CNC Bending -->
+          <div class="bg-white border border-gray-200/60 rounded-xl p-6 shadow-sm hover:shadow-md hover:border-primary/30 transition-all duration-300 relative group flex flex-col justify-between orange-glow overflow-hidden">
+            <div class="absolute top-0 left-0 w-0 h-1 bg-primary group-hover:w-full transition-all duration-300"></div>
+            <div class="space-y-4">
+              <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                <i data-lucide="compass" class="w-6 h-6"></i>
+              </div>
+              <h3 class="text-base font-extrabold text-gray-900 group-hover:text-primary transition-colors">CNC Bending</h3>
+              <p class="text-xs text-gray-500 leading-relaxed font-light">
+                Consistent and precise bending of sheet metals to create custom angles, profiles, and structural casings using automated backgauges.
+              </p>
+            </div>
+            <div class="pt-6 mt-4 border-t border-gray-100 flex items-center justify-between">
+              <a href="#quote" class="text-[10px] uppercase font-bold text-gray-400 group-hover:text-primary transition-colors flex items-center gap-1">
+                Request Pricing
+                <i data-lucide="arrow-up-right" class="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- 3. Industrial Fabrication -->
+          <div class="bg-white border border-gray-200/60 rounded-xl p-6 shadow-sm hover:shadow-md hover:border-primary/30 transition-all duration-300 relative group flex flex-col justify-between orange-glow overflow-hidden">
+            <div class="absolute top-0 left-0 w-0 h-1 bg-primary group-hover:w-full transition-all duration-300"></div>
+            <div class="space-y-4">
+              <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                <i data-lucide="wrench" class="w-6 h-6"></i>
+              </div>
+              <h3 class="text-base font-extrabold text-gray-900 group-hover:text-primary transition-colors">Industrial Fabrication</h3>
+              <p class="text-xs text-gray-500 leading-relaxed font-light">
+                Heavy-duty assemblies and structures for industrial equipment, factories, custom machinery stands, and processing units.
+              </p>
+            </div>
+            <div class="pt-6 mt-4 border-t border-gray-100 flex items-center justify-between">
+              <a href="#quote" class="text-[10px] uppercase font-bold text-gray-400 group-hover:text-primary transition-colors flex items-center gap-1">
+                Request Pricing
+                <i data-lucide="arrow-up-right" class="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- 4. MS Sheet Metal Work -->
+          <div class="bg-white border border-gray-200/60 rounded-xl p-6 shadow-sm hover:shadow-md hover:border-primary/30 transition-all duration-300 relative group flex flex-col justify-between orange-glow overflow-hidden">
+            <div class="absolute top-0 left-0 w-0 h-1 bg-primary group-hover:w-full transition-all duration-300"></div>
+            <div class="space-y-4">
+              <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                <i data-lucide="grid" class="w-6 h-6"></i>
+              </div>
+              <h3 class="text-base font-extrabold text-gray-900 group-hover:text-primary transition-colors">MS Sheet Metal Work</h3>
+              <p class="text-xs text-gray-500 leading-relaxed font-light">
+                Sizing, stamping, bending, and welding of Mild Steel components including enclosures, panels, and mounting plates.
+              </p>
+            </div>
+            <div class="pt-6 mt-4 border-t border-gray-100 flex items-center justify-between">
+              <a href="#quote" class="text-[10px] uppercase font-bold text-gray-400 group-hover:text-primary transition-colors flex items-center gap-1">
+                Request Pricing
+                <i data-lucide="arrow-up-right" class="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- 5. SS Fabrication -->
+          <div class="bg-white border border-gray-200/60 rounded-xl p-6 shadow-sm hover:shadow-md hover:border-primary/30 transition-all duration-300 relative group flex flex-col justify-between orange-glow overflow-hidden">
+            <div class="absolute top-0 left-0 w-0 h-1 bg-primary group-hover:w-full transition-all duration-300"></div>
+            <div class="space-y-4">
+              <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                <i data-lucide="shield-check" class="w-6 h-6"></i>
+              </div>
+              <h3 class="text-base font-extrabold text-gray-900 group-hover:text-primary transition-colors">SS Fabrication</h3>
+              <p class="text-xs text-gray-500 leading-relaxed font-light">
+                Specialized Stainless Steel fabrication for hygienic, rust-resistant applications like food processing, pharma, chemical tanks, and designer panels.
+              </p>
+            </div>
+            <div class="pt-6 mt-4 border-t border-gray-100 flex items-center justify-between">
+              <a href="#quote" class="text-[10px] uppercase font-bold text-gray-400 group-hover:text-primary transition-colors flex items-center gap-1">
+                Request Pricing
+                <i data-lucide="arrow-up-right" class="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- 6. Shearing Cutting -->
+          <div class="bg-white border border-gray-200/60 rounded-xl p-6 shadow-sm hover:shadow-md hover:border-primary/30 transition-all duration-300 relative group flex flex-col justify-between orange-glow overflow-hidden">
+            <div class="absolute top-0 left-0 w-0 h-1 bg-primary group-hover:w-full transition-all duration-300"></div>
+            <div class="space-y-4">
+              <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                <i data-lucide="scissors" class="w-6 h-6"></i>
+              </div>
+              <h3 class="text-base font-extrabold text-gray-900 group-hover:text-primary transition-colors">Shearing Cutting</h3>
+              <p class="text-xs text-gray-500 leading-relaxed font-light">
+                Rapid sizing and cutting of metal sheets up to 6mm thickness with straight edges, preparing plates for bending and welding.
+              </p>
+            </div>
+            <div class="pt-6 mt-4 border-t border-gray-100 flex items-center justify-between">
+              <a href="#quote" class="text-[10px] uppercase font-bold text-gray-400 group-hover:text-primary transition-colors flex items-center gap-1">
+                Request Pricing
+                <i data-lucide="arrow-up-right" class="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- 7. Structural Fabrication -->
+          <div class="bg-white border border-gray-200/60 rounded-xl p-6 shadow-sm hover:shadow-md hover:border-primary/30 transition-all duration-300 relative group flex flex-col justify-between orange-glow overflow-hidden">
+            <div class="absolute top-0 left-0 w-0 h-1 bg-primary group-hover:w-full transition-all duration-300"></div>
+            <div class="space-y-4">
+              <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                <i data-lucide="warehouse" class="w-6 h-6"></i>
+              </div>
+              <h3 class="text-base font-extrabold text-gray-900 group-hover:text-primary transition-colors">Structural Fabrication</h3>
+              <p class="text-xs text-gray-500 leading-relaxed font-light">
+                Welding and assembling of structural trusses, columns, support frames, factory sheds, and heavy steel girders.
+              </p>
+            </div>
+            <div class="pt-6 mt-4 border-t border-gray-100 flex items-center justify-between">
+              <a href="#quote" class="text-[10px] uppercase font-bold text-gray-400 group-hover:text-primary transition-colors flex items-center gap-1">
+                Request Pricing
+                <i data-lucide="arrow-up-right" class="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- 8. Custom Engineering -->
+          <div class="bg-white border border-gray-200/60 rounded-xl p-6 shadow-sm hover:shadow-md hover:border-primary/30 transition-all duration-300 relative group flex flex-col justify-between orange-glow overflow-hidden">
+            <div class="absolute top-0 left-0 w-0 h-1 bg-primary group-hover:w-full transition-all duration-300"></div>
+            <div class="space-y-4">
+              <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                <i data-lucide="cpu" class="w-6 h-6"></i>
+              </div>
+              <h3 class="text-base font-extrabold text-gray-900 group-hover:text-primary transition-colors">Custom Engineering</h3>
+              <p class="text-xs text-gray-500 leading-relaxed font-light">
+                End-to-end support for custom drawing designs. We turn your DXF, DWG, or PDF blueprints into high-quality finished products.
+              </p>
+            </div>
+            <div class="pt-6 mt-4 border-t border-gray-100 flex items-center justify-between">
+              <a href="#quote" class="text-[10px] uppercase font-bold text-gray-400 group-hover:text-primary transition-colors flex items-center gap-1">
+                Request Pricing
+                <i data-lucide="arrow-up-right" class="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= WHY WORK WITH US SECTION ================= -->
+    <section id="why-choose-us" class="py-20 bg-industrial-black text-white relative overflow-hidden">
+      <!-- Background design accents -->
+      <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(255,107,0,0.08),transparent_50%)]"></div>
+      <div class="absolute top-0 right-0 w-80 h-80 rounded-full bg-primary/5 blur-3xl"></div>
+
+      <div class="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center text-left">
+          <!-- Left: Text & Statistics -->
+          <div class="lg:col-span-5 space-y-8">
+            <div class="space-y-3">
+              <span class="text-primary font-bold text-xs uppercase tracking-widest block">
+                WHY WORK WITH US
+              </span>
+              <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight leading-tight">
+                High-Caliber Manufacturing <br />
+                With <span class="text-primary text-glow-orange">No Compromises</span>
+              </h2>
+              <p class="text-gray-400 font-light text-sm md:text-base leading-relaxed pt-2">
+                We are a dependable manufacturing partner for builders, engineering contractors, and product developers in Pune, delivering high-speed execution at scale.
+              </p>
+            </div>
+
+            <!-- Stats Grid -->
+            <div class="grid grid-cols-2 gap-6 pt-4">
+              <div class="bg-white/5 border border-white/10 rounded-xl p-5 hover:border-primary/40 transition-colors">
+                <div class="text-2xl md:text-3xl font-black text-primary">15 kW</div>
+                <div class="text-[10px] md:text-xs text-gray-400 font-bold uppercase tracking-wider mt-1.5">Combined Laser Power</div>
+              </div>
+
+              <div class="bg-white/5 border border-white/10 rounded-xl p-5 hover:border-primary/40 transition-colors">
+                <div class="text-2xl md:text-3xl font-black text-primary">2</div>
+                <div class="text-[10px] md:text-xs text-gray-400 font-bold uppercase tracking-wider mt-1.5">Fiber Laser Systems</div>
+              </div>
+
+              <div class="bg-white/5 border border-white/10 rounded-xl p-5 hover:border-primary/40 transition-colors">
+                <div class="text-2xl md:text-3xl font-black text-primary">100%</div>
+                <div class="text-[10px] md:text-xs text-gray-400 font-bold uppercase tracking-wider mt-1.5">Bending Consistency</div>
+              </div>
+
+              <div class="bg-white/5 border border-white/10 rounded-xl p-5 hover:border-primary/40 transition-colors">
+                <div class="text-2xl md:text-3xl font-black text-primary">±0.02mm</div>
+                <div class="text-[10px] md:text-xs text-gray-400 font-bold uppercase tracking-wider mt-1.5">Max Cutting Precision</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Detailed benefits grid -->
+          <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div class="bg-white/5 border border-white/5 hover:border-primary/20 rounded-2xl p-6 hover:bg-white/10 transition-all duration-300 group">
+              <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                <i data-lucide="zap" class="w-5 h-5"></i>
+              </div>
+              <h3 class="text-base font-bold mt-4 text-white group-hover:text-primary transition-colors font-sans">Advanced Laser Systems</h3>
+              <p class="text-xs text-gray-400 mt-2 leading-relaxed font-light">
+                Dual fiber laser setups (12 kW + 3 kW) provide uninterrupted processing and custom thickness adaptation.
+              </p>
+            </div>
+
+            <div class="bg-white/5 border border-white/5 hover:border-primary/20 rounded-2xl p-6 hover:bg-white/10 transition-all duration-300 group">
+              <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                <i data-lucide="shield-check" class="w-5 h-5"></i>
+              </div>
+              <h3 class="text-base font-bold mt-4 text-white group-hover:text-primary transition-colors font-sans">Quality Control</h3>
+              <p class="text-xs text-gray-400 mt-2 leading-relaxed font-light">
+                Every part undergoes dimensional checks against CAD drawings (DXF/DWG) to ensure perfect fits.
+              </p>
+            </div>
+
+            <div class="bg-white/5 border border-white/5 hover:border-primary/20 rounded-2xl p-6 hover:bg-white/10 transition-all duration-300 group">
+              <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                <i data-lucide="truck" class="w-5 h-5"></i>
+              </div>
+              <h3 class="text-base font-bold mt-4 text-white group-hover:text-primary transition-colors font-sans">Fast B2B Dispatch</h3>
+              <p class="text-xs text-gray-400 mt-2 leading-relaxed font-light">
+                We respect project timelines. Standard sheets are processed and dispatched within 24 to 72 hours.
+              </p>
+            </div>
+
+            <div class="bg-white/5 border border-white/5 hover:border-primary/20 rounded-2xl p-6 hover:bg-white/10 transition-all duration-300 group">
+              <div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                <i data-lucide="dollar-sign" class="w-5 h-5"></i>
+              </div>
+              <h3 class="text-base font-bold mt-4 text-white group-hover:text-primary transition-colors font-sans">Competitive Estimations</h3>
+              <p class="text-xs text-gray-400 mt-2 leading-relaxed font-light">
+                Optimized sheet nesting algorithms reduce metal waste, translating to lower per-part costs for clients.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= INSTANT QUOTE SECTION ================= -->
+    <section id="quote" class="py-20 bg-industrial-light text-industrial-black">
+      <div class="max-w-7xl mx-auto px-4 md:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-stretch">
+          <!-- Left Block: Description and B2B Quotation Guide -->
+          <div class="lg:col-span-5 flex flex-col justify-between space-y-8 text-left">
+            <div class="space-y-4">
+              <span class="text-primary font-bold text-xs uppercase tracking-widest block">
+                GET A QUOTATION
+              </span>
+              <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight">
+                Request a <span class="text-primary">Formal Pricing</span> <br />
+                Proposal
+              </h2>
+              <p class="text-gray-500 font-light text-sm leading-relaxed">
+                Submit your CAD drawings (.dxf, .dwg) or PDF specifications. Our engineering team will assess the drawings, design optimal sheet nests, and issue an official B2B quotation.
+              </p>
+            </div>
+
+            <!-- B2B Quotation Guide Card -->
+            <div class="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm orange-glow relative overflow-hidden space-y-4">
+              <h3 class="font-extrabold text-xs uppercase text-gray-400 tracking-wider">
+                Quotation Process
+              </h3>
+              
+              <ul class="space-y-3.5">
+                <li class="flex gap-3 items-start">
+                  <span class="w-5 h-5 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold text-xs flex-shrink-0 mt-0.5">1</span>
+                  <div>
+                    <h4 class="text-xs font-bold text-gray-800">Submit Specifications</h4>
+                    <p class="text-[10px] text-gray-500 leading-normal mt-0.5">Upload your DXF/DWG/PDF drawings and enter material properties (SS/MS/Aluminum).</p>
+                  </div>
+                </li>
+                <li class="flex gap-3 items-start">
+                  <span class="w-5 h-5 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold text-xs flex-shrink-0 mt-0.5">2</span>
+                  <div>
+                    <h4 class="text-xs font-bold text-gray-800">CAD Review & Nesting</h4>
+                    <p class="text-[10px] text-gray-500 leading-normal mt-0.5">Our shop floor team designs nesting layouts to optimize sheet utilization and minimize scrap.</p>
+                  </div>
+                </li>
+                <li class="flex gap-3 items-start">
+                  <span class="w-5 h-5 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold text-xs flex-shrink-0 mt-0.5">3</span>
+                  <div>
+                    <h4 class="text-xs font-bold text-gray-800">Quotation Issued</h4>
+                    <p class="text-[10px] text-gray-500 leading-normal mt-0.5">We send a formal PDF quotation containing precise manufacturing rates directly to your inbox within 2 hours.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Quick Contact Info -->
+            <div class="hidden lg:block space-y-2 text-xs text-gray-500">
+              <p>📍 SWAMI VIVEKANAND INDUSTRIAL ESTATE, HADAPSAR, PUNE</p>
+              <p>📞 G. D. DAHAKE: +91 9022185091</p>
+            </div>
+          </div>
+
+          <!-- Right Block: Interactive Form Frame -->
+          <div class="lg:col-span-7">
+            <div id="quote-form-container" class="bg-white border border-gray-200/60 rounded-2xl shadow-xl overflow-hidden h-full text-left">
+              <form id="quote-form" class="p-6 md:p-8 space-y-6">
+                <!-- Web3Forms Configuration -->
+                <input type="hidden" name="access_key" value="2635290a-8dfb-4e5b-8c9e-76b9a265b0a7">
+                <input type="hidden" name="from_name" value="Raj Fabrication Quote System">
+
+                <h3 class="text-lg font-extrabold text-gray-900 border-b border-gray-100 pb-4">
+                  Specification Sheet
+                </h3>
+
+                <!-- Step 1: Upload Drawing -->
+                <div class="space-y-2">
+                  <label class="text-xs font-bold text-gray-700 uppercase tracking-wider block">
+                    Upload Technical Drawing (.PDF / .DXF / .DWG)
+                  </label>
+                  <div id="drop-zone" class="border-2 border-dashed border-gray-300 hover:border-primary rounded-xl p-6 text-center cursor-pointer transition-colors duration-200 relative">
+                    <input type="file" id="quote-file" accept=".pdf,.dxf,.dwg" onchange="handleFileSelect(event)" class="absolute inset-0 w-full h-full opacity-0 cursor-pointer z-10" />
+                    
+                    <div id="upload-prompt" class="space-y-2">
+                      <i data-lucide="upload" class="w-8 h-8 text-gray-400 mx-auto"></i>
+                      <p class="text-xs font-bold text-gray-600">
+                        Drag and drop your drawing here, or <span class="text-primary">browse</span>
+                      </p>
+                      <p class="text-[10px] text-gray-400">PDF, DXF, or DWG formats (Max 10MB)</p>
+                    </div>
+
+                    <div id="file-info" class="hidden flex items-center justify-center gap-3">
+                      <div class="p-2 rounded bg-emerald-100 text-emerald-600">
+                        <i data-lucide="file-text" class="w-6 h-6"></i>
+                      </div>
+                      <div class="text-left">
+                        <p id="filename-display" class="text-xs font-bold text-gray-700 truncate max-w-[200px] sm:max-w-[400px]">filename.dxf</p>
+                        <p id="filesize-display" class="text-[10px] text-gray-400">0.00 MB</p>
+                      </div>
+                      <button type="button" onclick="removeSelectedFile(event)" class="text-xs font-bold text-red-500 hover:text-red-700 ml-4 relative z-20">
+                        Remove
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Step 2: Spec Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                  <div class="space-y-1">
+                    <label class="text-[10px] font-bold text-gray-400 uppercase tracking-wider">
+                      Material Type
+                    </label>
+                    <select name="material" class="w-full bg-industrial-light border border-gray-200 rounded-lg p-2.5 text-xs font-bold text-gray-700 focus:outline-none focus:border-primary">
+                      <option value="MS">Mild Steel (MS)</option>
+                      <option value="SS">Stainless Steel (SS)</option>
+                      <option value="Aluminum">Aluminum</option>
+                    </select>
+                  </div>
+
+                  <div class="space-y-1">
+                    <label class="text-[10px] font-bold text-gray-400 uppercase tracking-wider">
+                      Thickness (mm)
+                    </label>
+                    <input type="number" name="thickness" min="0.5" max="40" step="0.5" value="2" class="w-full bg-industrial-light border border-gray-200 rounded-lg p-2 text-xs font-semibold focus:outline-none focus:border-primary" placeholder="e.g. 2" />
+                  </div>
+
+                  <div class="space-y-1">
+                    <label class="text-[10px] font-bold text-gray-400 uppercase tracking-wider">
+                      Quantity (Pcs)
+                    </label>
+                    <input type="number" name="quantity" min="1" value="50" class="w-full bg-industrial-light border border-gray-200 rounded-lg p-2 text-xs font-semibold focus:outline-none focus:border-primary" placeholder="e.g. 50" />
+                  </div>
+                </div>
+
+                <!-- Step 3: Contact Grid -->
+                <div class="space-y-4 pt-2">
+                  <h4 class="text-[10px] font-bold text-gray-400 uppercase tracking-wider border-b border-gray-100 pb-1">
+                    Contact Details
+                  </h4>
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <input type="text" name="name" required class="w-full bg-industrial-light border border-gray-200 rounded-lg p-2.5 text-xs font-medium focus:outline-none focus:border-primary" placeholder="Full Name / Company Name *" />
+                    <input type="tel" name="phone" required class="w-full bg-industrial-light border border-gray-200 rounded-lg p-2.5 text-xs font-medium focus:outline-none focus:border-primary" placeholder="Contact Number *" />
+                  </div>
+                  <input type="email" name="email" required class="w-full bg-industrial-light border border-gray-200 rounded-lg p-2.5 text-xs font-medium focus:outline-none focus:border-primary" placeholder="Email Address *" />
+                  <textarea name="message" rows="2" class="w-full bg-industrial-light border border-gray-200 rounded-lg p-2.5 text-xs font-medium focus:outline-none focus:border-primary" placeholder="Additional instructions (optional)..."></textarea>
+                </div>
+
+                <button type="submit" id="quote-submit-btn" class="w-full bg-primary hover:bg-primary-dark text-white font-bold py-3.5 rounded-lg text-xs tracking-wider transition-colors shadow-md shadow-primary/25 uppercase">
+                  SUBMIT QUOTE REQUEST
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= GOOGLE MAPS SECTION ================= -->
+    <section class="py-16 bg-white text-industrial-black border-t border-gray-100">
+      <div class="max-w-7xl mx-auto px-4 md:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center text-left">
+          <!-- Left Block: Map details, directions and QR Code -->
+          <div class="lg:col-span-5 space-y-6">
+            <div class="space-y-2">
+              <span class="text-primary font-bold text-xs uppercase tracking-widest block">
+                LOCATE OUR FACILITY
+              </span>
+              <h2 class="text-2xl md:text-3xl font-extrabold tracking-tight">
+                Visit Raj Fabrication <br />
+                & Engineering
+              </h2>
+            </div>
+
+            <div class="space-y-4">
+              <!-- Address card -->
+              <div class="flex gap-3 items-start bg-industrial-light p-4 rounded-xl border border-gray-200/50">
+                <i data-lucide="map-pin" class="w-5 h-5 text-primary flex-shrink-0 mt-0.5"></i>
+                <div>
+                  <h4 class="font-bold text-xs uppercase text-gray-400">Headquarters</h4>
+                  <p class="text-xs font-semibold text-gray-700 leading-relaxed mt-1">
+                    Plot No. 38, Swami Vivekanand Industrial Estate, Handewadi Road, Kalepadal, Hadapsar, Pune – 411028, Maharashtra, India
+                  </p>
+                </div>
+              </div>
+
+              <!-- Operating hours -->
+              <div class="flex gap-3 items-start bg-industrial-light p-4 rounded-xl border border-gray-200/50">
+                <i data-lucide="calendar-range" class="w-5 h-5 text-primary flex-shrink-0 mt-0.5"></i>
+                <div>
+                  <h4 class="font-bold text-xs uppercase text-gray-400">Business Hours</h4>
+                  <p class="text-xs font-semibold text-gray-700 leading-relaxed mt-1">
+                    All Days: 8:00 AM to 10:00 PM
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Navigation & QR Scan widget -->
+            <div class="flex flex-col sm:flex-row items-center gap-4 bg-industrial-light/60 p-4 rounded-xl border border-gray-200/30">
+              <!-- Actual Google Maps QR Code -->
+              <div class="w-24 h-24 bg-white p-1.5 rounded-lg border border-gray-200 flex flex-col justify-center items-center shadow-md relative flex-shrink-0 group hover:scale-105 transition-transform duration-300">
+                <div class="w-20 h-20 relative">
+                  <img src="./QRcode_raj.png" alt="Scan for Map Location" class="w-full h-full object-contain" />
+                </div>
+              </div>
+
+              <div class="text-center sm:text-left space-y-3">
+                <p class="text-xs text-gray-500 font-light leading-relaxed">
+                  Heading to our workshop? Scan the QR code with your phone or click the button below to launch Google Maps directions.
+                </p>
+                <a href="https://www.google.com/maps/dir/?api=1&destination=Raj+Fabrication+Swami+Vivekanand+Industrial+Estate+Hadapsar+Pune" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white font-bold text-xs py-2.5 px-4 rounded-lg shadow-sm transition-colors uppercase tracking-wider">
+                  <i data-lucide="navigation" class="w-3.5 h-3.5"></i>
+                  Navigate via GPS
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Block: Embedded Google Map Frame -->
+          <div class="lg:col-span-7 h-96 lg:h-[400px] w-full rounded-2xl overflow-hidden border border-gray-200 shadow-md">
+            <iframe src="https://maps.google.com/maps?q=Swami%20Vivekanand%20Industrial%20Estate,%20Hadapsar,%20Pune&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border: 0;" allowfullscreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Raj Fabrication Location Map"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT SECTION ================= -->
+    <section id="contact" class="py-20 bg-white text-industrial-black">
+      <div class="max-w-7xl mx-auto px-4 md:px-8">
+        <!-- Header -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-4 text-left">
+          <div class="space-y-2">
+            <span class="text-primary font-bold text-xs uppercase tracking-widest block">
+              GET IN TOUCH
+            </span>
+            <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight text-gray-900">
+              Start Your B2B <br />
+              <span class="text-primary">Inquiry & Collaboration</span>
+            </h2>
+          </div>
+          <p class="text-gray-500 max-w-sm font-light text-sm">
+            Interested in establishing a long-term supplier contract or placing a bulk parts order? Write to us or call directly.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-stretch text-left">
+          <!-- Left Column: Big Contact Cards -->
+          <div class="lg:col-span-5 flex flex-col justify-between space-y-6">
+            <div class="space-y-6">
+              <!-- Phone card -->
+              <div class="bg-industrial-light border border-gray-200/60 rounded-2xl p-6 flex items-start gap-4 shadow-sm relative overflow-hidden group">
+                <div class="p-3.5 rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                  <i data-lucide="phone" class="w-6 h-6"></i>
+                </div>
+                <div class="space-y-2">
+                  <h4 class="font-extrabold text-sm uppercase text-gray-400">Phone Number</h4>
+                  <div class="flex flex-col gap-1">
+                    <a href="tel:+919022185091" class="text-base font-extrabold text-gray-800 hover:text-primary transition-colors">
+                      +91 9022185091
+                    </a>
+                  </div>
+                  <p class="text-[10px] text-gray-500">Contact: G. D. Dahake (Proprietor)</p>
+                </div>
+              </div>
+
+              <!-- Email card -->
+              <div class="bg-industrial-light border border-gray-200/60 rounded-2xl p-6 flex items-start gap-4 shadow-sm relative overflow-hidden group">
+                <div class="p-3.5 rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                  <i data-lucide="mail" class="w-6 h-6"></i>
+                </div>
+                <div class="space-y-1">
+                  <h4 class="font-extrabold text-sm uppercase text-gray-400">Email Address</h4>
+                  <a href="mailto:waradesoham22@gmail.com" class="text-base font-extrabold text-gray-800 hover:text-primary transition-colors block">
+                    waradesoham22@gmail.com
+                  </a>
+                  <p class="text-[10px] text-gray-500">Direct response for engineering drawings & CAD queries</p>
+                </div>
+              </div>
+
+              <!-- GST status -->
+              <div class="bg-industrial-light border border-gray-200/60 rounded-2xl p-6 flex items-start gap-4 shadow-sm relative overflow-hidden group">
+                <div class="p-3.5 rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                  <i data-lucide="shield-check" class="w-6 h-6"></i>
+                </div>
+                <div class="space-y-1">
+                  <h4 class="font-extrabold text-sm uppercase text-gray-400">Business GSTIN</h4>
+                  <p class="text-base font-mono font-extrabold text-gray-800">
+                    27AISPD7120J1Z3
+                  </p>
+                  <p class="text-[10px] text-gray-500">Official registered entity: Raj Fabrication & Engineering</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quick map coordinates help -->
+            <div class="flex gap-2 items-center text-xs text-gray-400 font-medium">
+              <i data-lucide="map-pin" class="w-4 h-4 text-primary"></i>
+              Hadapsar industrial area, Pune, MH, India
+            </div>
+          </div>
+
+          <!-- Right Column: Inquiry Form Card -->
+          <div class="lg:col-span-7">
+            <div id="contact-form-container" class="bg-industrial-light border border-gray-200/60 rounded-2xl p-6 md:p-8 shadow-md h-full">
+              <form id="contact-form" class="space-y-4">
+                <!-- Web3Forms Configuration -->
+                <input type="hidden" name="access_key" value="2635290a-8dfb-4e5b-8c9e-76b9a265b0a7">
+                <input type="hidden" name="from_name" value="Raj Fabrication Web Inquiry">
+
+                <h3 class="text-lg font-extrabold text-gray-900 border-b border-gray-200/50 pb-3">
+                  Inquiry Form
+                </h3>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div class="space-y-1">
+                    <label class="text-[10px] font-bold text-gray-400 uppercase tracking-wider">
+                      Your Name / Enterprise *
+                    </label>
+                    <input type="text" name="name" required class="w-full bg-white border border-gray-200 rounded-lg p-2.5 text-xs font-semibold focus:outline-none focus:border-primary" placeholder="e.g. Acme Industries Ltd." />
+                  </div>
+                  <div class="space-y-1">
+                    <label class="text-[10px] font-bold text-gray-400 uppercase tracking-wider">
+                      Phone Number *
+                    </label>
+                    <input type="tel" name="phone" required class="w-full bg-white border border-gray-200 rounded-lg p-2.5 text-xs font-semibold focus:outline-none focus:border-primary" placeholder="e.g. +91 9999999999" />
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div class="space-y-1">
+                    <label class="text-[10px] font-bold text-gray-400 uppercase tracking-wider">
+                      Email Address *
+                    </label>
+                    <input type="email" name="email" required class="w-full bg-white border border-gray-200 rounded-lg p-2.5 text-xs font-semibold focus:outline-none focus:border-primary" placeholder="e.g. vendor@acme.com" />
+                  </div>
+                  <div class="space-y-1">
+                    <label class="text-[10px] font-bold text-gray-400 uppercase tracking-wider">
+                      Service of Interest
+                    </label>
+                    <select name="service" class="w-full bg-white border border-gray-200 rounded-lg p-2.5 text-xs font-bold text-gray-700 focus:outline-none focus:border-primary">
+                      <option value="Laser Cutting">Laser Cutting Solutions</option>
+                      <option value="CNC Bending">CNC Bending & Profiles</option>
+                      <option value="SS Fabrication">Stainless Steel Fabrication</option>
+                      <option value="MS Sheet Metal">MS Sheet Metal Work</option>
+                      <option value="Structural Frame">Structural Frame Assembly</option>
+                      <option value="Other">Other / Custom Request</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="space-y-1">
+                  <label class="text-[10px] font-bold text-gray-400 uppercase tracking-wider">
+                    Brief Project Description
+                  </label>
+                  <textarea name="message" rows="4" class="w-full bg-white border border-gray-200 rounded-lg p-2.5 text-xs font-semibold focus:outline-none focus:border-primary" placeholder="Detail your sheet metal dimensions, structural plans, or overall project timeline..."></textarea>
+                </div>
+
+                <button type="submit" id="contact-submit-btn" class="w-full bg-primary hover:bg-primary-dark text-white font-bold py-3.5 rounded-lg text-xs tracking-wider transition-colors shadow-md shadow-primary/25 flex items-center justify-center gap-2 uppercase">
+                  <i data-lucide="send" class="w-3.5 h-3.5"></i>
+                  SEND ENQUIRY MESSAGE
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER SECTION ================= -->
+  <footer class="bg-industrial-black text-gray-400 text-xs border-t border-white/10 pt-16 pb-8 relative z-10 text-left">
+    <div class="max-w-7xl mx-auto px-4 md:px-8">
+      <!-- Main Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 mb-12">
+        <!-- Col 1: Bio -->
+        <div class="lg:col-span-4 space-y-4">
+          <a href="#home" onclick="smoothScroll('#home')" class="flex items-center gap-2 text-xl font-bold tracking-tight text-white">
+            <div class="w-8 h-8 flex items-center justify-center bg-primary text-white rounded-lg overflow-hidden">
+              <span class="font-extrabold text-sm text-white">RF</span>
+            </div>
+            <div class="flex flex-col leading-none">
+              <span class="font-extrabold uppercase text-base tracking-wider">
+                Raj <span class="text-primary">Fabrication</span>
+              </span>
+              <span class="text-[8px] text-gray-500 font-semibold tracking-widest uppercase">
+                & Engineering
+              </span>
+            </div>
+          </a>
+          
+          <p class="text-gray-500 leading-relaxed max-w-sm font-light">
+            Providing high-speed fiber laser cutting and CNC sheet metal bending with precision and reliability. Serving industrial developers and builders throughout Pune, Maharashtra.
+          </p>
+
+          <div class="space-y-2 pt-2 text-[11px]">
+            <div class="flex items-center gap-1.5 text-gray-400">
+              <i data-lucide="shield" class="w-3.5 h-3.5 text-primary flex-shrink-0"></i>
+              <span>GSTIN: <strong>27AISPD7120J1Z3</strong></span>
+            </div>
+            <div class="text-gray-500">
+              Proprietor: <strong>G. D. Dahake</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="lg:col-span-2 space-y-4">
+          <h4 class="text-white font-extrabold uppercase text-[10px] tracking-widest border-l-2 border-primary pl-2">
+            Quick Links
+          </h4>
+          <ul class="space-y-2 font-medium">
+            <li><a href="#home" onclick="smoothScroll('#home')" class="hover:text-primary transition-colors flex items-center gap-1">Home</a></li>
+            <li><a href="#about" onclick="smoothScroll('#about')" class="hover:text-primary transition-colors flex items-center gap-1">About Us</a></li>
+            <li><a href="#machines" onclick="smoothScroll('#machines')" class="hover:text-primary transition-colors flex items-center gap-1">Our Machines</a></li>
+            <li><a href="#services" onclick="smoothScroll('#services')" class="hover:text-primary transition-colors flex items-center gap-1">Services</a></li>
+            <li><a href="#quote" onclick="smoothScroll('#quote')" class="hover:text-primary transition-colors flex items-center gap-1">Instant Quote</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Services -->
+        <div class="lg:col-span-3 space-y-4">
+          <h4 class="text-white font-extrabold uppercase text-[10px] tracking-widest border-l-2 border-primary pl-2">
+            Our Services
+          </h4>
+          <ul class="space-y-2 font-medium">
+            <li><a href="#services" onclick="smoothScroll('#services')" class="hover:text-primary transition-colors">Fiber Laser Cutting</a></li>
+            <li><a href="#services" onclick="smoothScroll('#services')" class="hover:text-primary transition-colors">CNC Bending</a></li>
+            <li><a href="#services" onclick="smoothScroll('#services')" class="hover:text-primary transition-colors">Industrial Fabrication</a></li>
+            <li><a href="#services" onclick="smoothScroll('#services')" class="hover:text-primary transition-colors">MS Sheet Metal Work</a></li>
+            <li><a href="#services" onclick="smoothScroll('#services')" class="hover:text-primary transition-colors">SS Fabrication</a></li>
+            <li><a href="#services" onclick="smoothScroll('#services')" class="hover:text-primary transition-colors">Shearing Cutting</a></li>
+            <li><a href="#services" onclick="smoothScroll('#services')" class="hover:text-primary transition-colors">Structural Steel Projects</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Address -->
+        <div class="lg:col-span-3 space-y-4">
+          <h4 class="text-white font-extrabold uppercase text-[10px] tracking-widest border-l-2 border-primary pl-2">
+            Contact Info
+          </h4>
+          <ul class="space-y-3 font-medium text-gray-500">
+            <li class="flex gap-2 items-start text-gray-400">
+              <i data-lucide="map-pin" class="w-4 h-4 text-primary flex-shrink-0 mt-0.5"></i>
+              <span>
+                Plot No. 38, Swami Vivekanand Industrial Estate, Handewadi Road, Kalepadal, Hadapsar, Pune – 411028
+              </span>
+            </li>
+            <li class="flex gap-2 items-center text-gray-400">
+              <i data-lucide="phone" class="w-4 h-4 text-primary flex-shrink-0"></i>
+              <a href="tel:+919022185091" class="hover:text-primary transition-colors font-bold text-gray-300">
+                +91 9022185091
+              </a>
+            </li>
+            <li class="flex gap-2 items-center text-gray-400">
+              <i data-lucide="mail" class="w-4 h-4 text-primary flex-shrink-0"></i>
+              <a href="mailto:waradesoham22@gmail.com" class="hover:text-primary transition-colors text-gray-300 font-bold">
+                waradesoham22@gmail.com
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Divider & Social / Copyright -->
+      <div class="pt-8 mt-8 border-t border-white/5 flex flex-col sm:flex-row justify-between items-center gap-4 text-gray-500">
+        <div>
+          © 2026 Raj Fabrication & Engineering. All Rights Reserved.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= FLOATING WHATSAPP BUTTON ================= -->
+  <div class="fixed bottom-6 right-6 z-[99] flex flex-col items-end gap-2 pointer-events-none">
+    <!-- Tooltip Alert Banner -->
+    <div id="whatsapp-tooltip" class="hidden bg-white text-gray-800 shadow-xl border border-gray-100 rounded-xl p-3.5 max-w-[240px] pointer-events-auto flex items-start gap-2.5 orange-glow transition-all duration-300">
+      <div class="space-y-1 text-left">
+        <h5 class="font-extrabold text-[11px] text-primary uppercase tracking-wider">
+          Quick Support
+        </h5>
+        <p class="text-[10px] text-gray-500 leading-normal font-light">
+          Need a quick cutting estimate? Click below to chat directly with G. D. Dahake on WhatsApp!
+        </p>
+      </div>
+      <button onclick="closeWhatsappTooltip(event)" class="text-gray-400 hover:text-gray-600 flex-shrink-0" aria-label="Close message">
+        <i data-lucide="x" class="w-3.5 h-3.5"></i>
+      </button>
+    </div>
+
+    <!-- Floating Button Icon -->
+    <a href="https://wa.me/919022185091?text=Hello%20Raj%20Fabrication%2C%20I%20visited%20your%20website%20and%20would%20like%20to%20request%20a%20quotation%20for%20a%20custom%20job." target="_blank" rel="noopener noreferrer" class="w-14 h-14 bg-emerald-600 hover:bg-emerald-700 text-white rounded-full flex items-center justify-center shadow-lg pointer-events-auto transition-transform hover:scale-105 active:scale-95 relative group" aria-label="Chat on WhatsApp">
+      <!-- Pulsating green ring -->
+      <span class="absolute inset-0 rounded-full bg-emerald-600/30 animate-ping pointer-events-none"></span>
+      <i data-lucide="message-circle" class="w-7 h-7 fill-white relative z-10 text-white"></i>
+      
+      <!-- Tooltip trigger on hover -->
+      <span class="absolute right-16 bg-industrial-black text-white text-[10px] uppercase font-bold py-1.5 px-3 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none whitespace-nowrap">
+        WhatsApp Us
+      </span>
+    </a>
+  </div>
+
+  <!-- Custom Scripts -->
+  <script src="script.js" defer></script>
+</body>
+</html>
